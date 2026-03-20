@@ -20,7 +20,7 @@ MyTodo is a simple and user-friendly todo list application to help you manage da
 2. Click "Add"
 3. Manage your tasks easily
 
-## 📁 Project Structure
-- index.html
-- style.css
-- script.js
+## Clone Repositori
+``` bash
+git clone https://github.com/yescode23/My-Todo-App.git
+```
