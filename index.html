@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo | Homepage</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Icons Link -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">MyTodo</a>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            <button id="dark-mode-toggle" type="button" class="dark-mode-button">
+                <i class="bx bx-moon"></i>
+            </button>
+        </nav>
+
+        <button id="hamburger-toggle" type="button" class="hamburger-button">
+            <i class="bx bx-menu" id="hamburger-icon"></i>
+        </button>
+
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+
+        <div class="main-container">
+
+            <div class="popup popup-error-container">
+                <div class="error-description-container">
+                    <p>You Must Input Your List!</p>
+                </div>
+                <div class="error-button-container">
+                    <button type="button" class="button" onclick="okErrorButton()">OK</button>
+                </div>
+            </div>
+
+            <div class="popup popup-edit-list-container">
+                <div class="edit-description-container">
+                    <p>Edit Your List</p>
+                </div>
+                <div class="input-edit-container">
+                    <input type="text" id="edit-input-list" class="edit-input-list-text">
+                </div>
+                <div class="edit-action-button-container">
+                    <button type="button" id="ok-edit-button" class="button">OK</button>
+                    <button type="button" id="cancel-edit-button" class="button">Cancel</button>
+                </div>
+            </div>
+
+            <h1 class="heading">
+                Add Your Lists
+            </h1>
+            
+            <div class="input-list-container">
+                <input type="text" id="input-list" class="input-list-text">
+                <button type="button" id="add-button" class="button">Add</button>
+            </div>
+
+            <div class="list-container">
+                <p class="heading-2">My Lists</p>
+                <ul id="lists">
+                    <li class="first-example example-list-items" id="">
+                        <span id="first-span-example">Example 1</span>
+                        <div class="action-container">
+                            <div class="edit-button-container">
+                                <button id="edit-button-example-1" class="action-button">
+                                    <i class="bx bx-edit"></i>
+                                </button>
+                            </div>
+                            <div class="checklist-button-container">
+                                <button id="checklist-button-example-1" class="action-button">
+                                    <i class="bx bx-check"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="second-example example-list-items">
+                        <span id="second-span-example">Example 2</span>
+                        <div class="action-container">
+                            <div class="edit-button-container">
+                                <button id="edit-button-example-2" class="action-button">
+                                    <i class="bx bx-edit"></i>
+                                </button>
+                            </div>
+                            <div class="checklist-button-container">
+                                <button id="checklist-button-example-2" class="action-button">
+                                    <i class="bx bx-check"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="completed-list-container">
+                <p class="heading-2">Completed Lists</p>
+                <ul id="completed-lists"></ul>
+                <button type="button" id="delete-all-button" class="delete-all-button">
+                    Delete All
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+
+        <p>Made with love 🧡</p>
+
+    </footer>
+
+    <div class="popup-overlay"></div>
+
+    <!-- Javascript Link -->
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
