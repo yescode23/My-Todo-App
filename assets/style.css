@@ -132,6 +132,11 @@ body {
     align-items: center;
 }
 
+.example-list-items span {
+    flex: 1;
+    word-break: break-all;
+}
+
 .first-example, .second-example {
     opacity: 1;
     transition: all 0.3s ease;
@@ -160,6 +165,11 @@ body {
     opacity: 1;
     transform: scale(0.95) translateY(-10px);
     transition: all 0.3s ease;
+}
+
+.list-items span {
+    flex: 1;
+    word-break: break-all;
 }
 
 .list-items.show {
